@@ -23,7 +23,7 @@ function formatCurrency(type, value) {
 }
 
 
-if (currency === 'USD') {
+if (currency.toLowerCase() === 'usd') {
     let vndAmount = prompt("How much VND do you have?")
 
     if (isNaN(vndAmount) === false) {
@@ -32,7 +32,7 @@ if (currency === 'USD') {
     } else {
         console.log("Value must be a number")
     }
-} else if (currency === "VND") {
+} else if (currency.toLowerCase() === "vnd") {
     let usdAmount = prompt("How much USD do you have?")
 
     if (isNaN(usdAmount) === false) {
